@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h5 class="card-header">VENTAS</h5>
+        <div class="card-body">
+            <h5 class="card-title">Registrar Ventas</h5>
+
+            <form>
+                <div class="form-group row">
+                    <label for="sucursal" class="col-4 col-form-label"></label>
+                    <div class="col-8">
+                        <select id="sucursal" name="sucursal" class="custom-select">
+                      <option value="null">Seleccionar Sucursal</option>
+                      <option value="vitarte">VITARTE</option>
+                      <option value="vitarte">VITARTE</option>
+                      <option value="chosica">CHOSICA</option>
+                      <option value="chaclacayo">CHACLACAYO</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-4 col-form-label" for="cliente"></label>
+                    <div class="col-8">
+                        <select id="cliente" name="cliente" class="custom-select">
+                      <option value="null">Seleccionar Cliente</option>
+                      <option value="b_huamani">Benjamin Huamani</option>
+                      <option value="p_gonzales">Pepito Gonzales</option>
+                      <option value="a_diaz">Alberto Diaz</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-4 col-form-label" for="fecha"></label>
+                    <div class="col-8">
+                        <input id="fecha" name="fecha" placeholder="Seleccionar Fecha" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="documento" class="col-4 col-form-label"></label>
+                    <div class="col-8">
+                        <select id="documento" name="documento" class="custom-select">
+                      <option value="null">Seleccionar Tipo Documento</option>
+                      <option value="factura">FACTURA</option>
+                      <option value="boleta">BOLETA</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-4 col-8">
+                        <button name="submit" type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <table id="myTable" class="table table-dark"></table>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
 </html>
